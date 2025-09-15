@@ -17,8 +17,8 @@ aws-httpbin-project/
 │   ├── main.tf
 │   ├── variables.tf
 │   └── outputs.tf
-├── scripts/         # EC2 bootstrap (MicroK8s + TLS + deploy manifests)
-│   └── Installation_K8s_openssl.sh
+├── scripts/         # EC2 installation_K8s_openssl (MicroK8s + TLS + deploy manifests)
+│   └── installation_K8s_openssl.sh
 ├── k8s/             # Kubernetes manifests
 │   ├── httpbin-deployment.yaml
 │   ├── httpbin-service-public.yaml
@@ -94,7 +94,7 @@ aws-httpbin-project/
 
 4. **Create key pair name**
    - Must create it in AWS in key value of EC2 then add the value in variables.tf file in the default part
-   - `default     = "terraform-Keypair`  
+   - `default     = "terraform-Keypair" `  
 
 ---
 
