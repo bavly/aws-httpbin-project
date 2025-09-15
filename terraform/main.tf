@@ -109,7 +109,7 @@ resource "aws_instance" "k8s_instance" {
   key_name               = var.key_name
 
   # Bootstrap script for installing dependencies & microk8s
-  user_data = file("${path.module}/../scripts/Installation_K8s_openssl.sh")
+  user_data = file("${path.module}/../scripts/installation_K8s_openssl.sh")
 
   tags = {
     Name = "microk8s-httpbin"
