@@ -14,5 +14,5 @@ variable "public_subnet_cidr" {
 variable "key_name" {
   description = "Existing AWS EC2 key pair name"
   type        = string
-  default     = "terraform-Keypair"   # 👈 This is your key pair name must create it in AWS in key value of EC2
+  default     = "terraform-Keypair"   # This is your key pair name must create it in AWS in key value of EC2
 }

@@ -12,7 +12,7 @@ output "ec2_public_ip" {
   value       = aws_instance.k8s_instance.public_ip
 }
 
-# Optional: Security Group ID (for reference/debugging)
+# Security Group ID (for reference/debugging)
 output "security_group_id" {
   description = "Security Group ID attached to the EC2 instance"
   value       = aws_security_group.k8s_sg.id
