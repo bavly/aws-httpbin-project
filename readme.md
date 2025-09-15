@@ -92,16 +92,17 @@ aws-httpbin-project/
 3. **added .gitignore file**
    - so that to ignore large file like terraform-provider-aws_v6.13.0_x5.exe & *.tfstate
 
+4. **Create key pair name**
+   - Must create it in AWS in key value of EC2 then add the value in variables.tf file in the default part
+   - `default     = "terraform-Keypair`  
+
 ---
 
 ## 🛠️ Deployment Steps
 
 1. Clone the repo and enter terraform folder:
-   - You need to have key pair name must create it in AWS in key value of EC2
 
 ```bash
-# This is your key pair name must create it in AWS in key value of EC2 in variables.tf file
-default     = "terraform-Keypair"   
 cd aws-httpbin-project/terraform
 terraform init
 terraform plan
