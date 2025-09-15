@@ -163,5 +163,5 @@ To avoid AWS charges:
 ```bash
 cd aws-httpbin-project/terraform
 terraform destroy
-```}]}
+```
 
