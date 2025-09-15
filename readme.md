@@ -89,6 +89,9 @@ aws-httpbin-project/
    - `ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*`  
    - Works out-of-the-box with MicroK8s + snap.
 
+3. **added .gitignore file**
+   - so that to ignore large file like terraform-provider-aws_v6.13.0_x5.exe & *.tfstate
+
 ---
 
 ## 🛠️ Deployment Steps
