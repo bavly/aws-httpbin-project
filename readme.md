@@ -97,10 +97,11 @@ aws-httpbin-project/
 ## 🛠️ Deployment Steps
 
 1. Clone the repo and enter terraform folder:
-you need to have key pair name must create it in AWS in key value of EC2
-default     = "terraform-Keypair"   # 👈 This is your key pair name must create it in AWS in key value of EC2
+   - You need to have key pair name must create it in AWS in key value of EC2
 
 ```bash
+# This is your key pair name must create it in AWS in key value of EC2 in variables.tf file
+default     = "terraform-Keypair"   
 cd aws-httpbin-project/terraform
 terraform init
 terraform plan
