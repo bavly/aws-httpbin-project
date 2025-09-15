@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: httpbin-private
+  namespace: httpbin
+spec:
+  selector:
+    app: httpbin
+  ports:
+  - port: 80  # Service port inside cluster
+    targetPort: 80 # Container port in httpbin pod
+    nodePort: 30999 # Fixed external NodePort
+  type: NodePort
+  externalTrafficPolicy: Local # Preserve client source IP
+  sessionAffinity: ClientIP  # Sticky sessions based on client IP
